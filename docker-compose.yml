@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  api-service:
+    build: .
+    working_dir: /home
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/home
